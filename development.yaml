@@ -286,6 +286,12 @@ Resources:
                   - 'bedrock:InvokeAgent'
                 Resource:
                   - '*'
+              - Effect: 'Allow'
+                Action:
+                  - 'bedrock:InvokeModelWithResponseStream'
+                  Resource:
+                  - '*'
+            
         - PolicyName: 'DataBucketAccessPolicy'
           PolicyDocument:
             Version: '2012-10-17'
