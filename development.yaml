@@ -285,7 +285,7 @@ Resources:
                 Action:
                   - 'bedrock:InvokeAgent'
                 Resource:
-                  - !GetAtt AgentResource.AgentArn
+                  - '*'
         - PolicyName: 'DataBucketAccessPolicy'
           PolicyDocument:
             Version: '2012-10-17'
@@ -303,7 +303,7 @@ Resources:
                 Action:
                   - bedrock:Retrieve
                 Resource:
-                  - !GetAtt KnowledgeBase.KnowledgeBaseArn
+                  - '*'
 
   StreamlitLogGroup:
     DeletionPolicy: Retain
