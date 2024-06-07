@@ -289,7 +289,7 @@ Resources:
               - Effect: 'Allow'
                 Action:
                   - 'bedrock:InvokeModelWithResponseStream'
-                  Resource:
+                Resource:
                   - '*'
             
         - PolicyName: 'DataBucketAccessPolicy'
